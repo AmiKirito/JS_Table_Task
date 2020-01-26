@@ -1,50 +1,61 @@
-header{
+header {
     text-align: center;
     font-size: 2em;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
 }
-.submit{
+
+.submit {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30%;
 }
-.inputs{
+
+.inputs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: space-around;
 }
-#run{
+
+#run {
     padding: 10px;
 }
-#input1, #input2{
+
+#input1,
+#input2 {
     width: 150px;
     height: 20px;
     padding-left: 10px;
 }
-input[type=number]::-webkit-inner-spin-button{ 
-  -webkit-appearance: none; 
-  margin: 0; 
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
-.table-div{
+
+.table-div {
     display: flex;
     width: 80%;
 }
-table{
+
+table {
     width: 100%;
     padding: 10px;
 }
-td{
+
+td {
     width: 100px;
     height: 40px;
     border: 1px solid black;

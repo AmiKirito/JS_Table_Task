@@ -3,12 +3,11 @@
 var container = document.getElementsByClassName("container")[0];
 let btn = document.getElementById("run");
 
-btn.addEventListener('click', function() {
+btn.addEventListener('click', function () {
     let exTable = document.getElementById("theTable");
     let exCont = document.getElementById("table-div");
 
-    if(exTable != null)
-    {
+    if (exTable != null) {
         exTable.remove();
     }
     exCont.remove();
@@ -22,27 +21,24 @@ btn.addEventListener('click', function() {
     table.id = "theTable";
     let tbody = document.createElement("tbody");
 
-    for(let i = 0; i < rows; i++)
-    {
+    for (let i = 0; i < rows; i++) {
         let row = document.createElement('tr');
-        for(let j = 0; j < columns; j++)
-        {
+        for (let j = 0; j < columns; j++) {
             let column = document.createElement('td');
             row.appendChild(column);
         }
         tbody.appendChild(row);
     }
-    
+
     table.appendChild(tbody);
     cont.appendChild(table);
     container.appendChild(cont);
 });
-btn.addEventListener('click', function() {
 
-    for(let i = 0; i < document.getElementsByTagName("tr").length; i++)
-    {
-        for(let j = 0; j < document.getElementsByTagName("tr")[i].cells.length; j++)
-        {
+btn.addEventListener('click', function () {
+
+    for (let i = 0; i < document.getElementsByTagName("tr").length; i++) {
+        for (let j = 0; j < document.getElementsByTagName("tr")[i].cells.length; j++) {
             let data = document.getElementsByTagName("tr")[i].cells[j].textContent = (i + 1) + "" + (j + 1);
         }
     }
