@@ -32,7 +32,7 @@ btn.addEventListener('click', function() {
         }
         tbody.appendChild(row);
     }
-    debugger;
+    
     table.appendChild(tbody);
     cont.appendChild(table);
     container.appendChild(cont);

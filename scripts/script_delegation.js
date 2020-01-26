@@ -1,7 +1,7 @@
 "use strict";
 btn.addEventListener('click', function() {
     let wrap = document.getElementById("table-div");
-    debugger;
+    
     wrap.addEventListener('click', function(event){
         let td = event.target.closest("td");
         if(!td) return;
